@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900&display=swap">
+</head>
+
+<body>
+
+    <nav class='fixed-top'>
+        <div class="logo"><img src="img/empcnewlogo.png" class='img-fluid' alt=""></div>
+        <ul class="links d-flex align-items-center justify-content-center">
+            <li class="item"><a href="#" class="link">test</a></li>
+            <li class="item"><a href="#" class="link">test</a></li>
+            <li class="item"><a href="#" class="link">test</a></li>
+            <li class="item"><a href="#" class="link">test</a></li>
+        </ul>
+        <div class="lang">
+            <label class="d-inline-block">Language</label>
+            <i class="fas fa-sort-down"></i>
+            <ul>
+                <li class='arLang'><a href="#">Arabic</a></li>
+                <li class='enLang'><a href="#">English</a></li>
+            </ul>
+        </div>
+        <svg id="hamburger" width='30' viewBox="0 0 11 9">
+            <line id="line_1" style="fill:none;stroke:#212529;stroke-width:0.5;stroke-miterlimit:10;" x1="1.5" y1="2.5" x2="9.5" y2="2.5"/>
+            <line id="line_2" style="fill:none;stroke:#212529;stroke-width:0.5;stroke-miterlimit:10;" x1="1.5" y1="4.5" x2="9.5" y2="4.5"/>
+            <line id="line_3" style="fill:none;stroke:#212529;stroke-width:0.5;stroke-miterlimit:10;" x1="1.5" y1="6.5" x2="9.5" y2="6.5"/>
+        </svg>
+    </nav>
+
+    <div class="customer-visit-section Equipment-section">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="form-box left w-100 h-100">
+                        <h4 class="text-center titleSection">Equipment Transfer Request</h4>
+                        <hr class='mb-4'>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-5 pr-2">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="" hidden>Equipment</option>
+                                            <option value="">test</option>
+                                            <option value="">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-6 pl-1">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Notes">
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <div class="close">
+                                        <i class="fas fa-times d-inline-block"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add">
+                                <button class="add-btn">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="form-box right">
+                        <h4 class="text-center titleSection">Security Registration</h4>
+                        <hr class='mb-4'>
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-3 px-md-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="ID Number">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Plat Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Car Color">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 px-3 px-md-0">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Car Brand">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option value="" hidden>Destination </option>
+                                            <option value="">test</option>
+                                            <option value="">test</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="block my-3">
+                                <label class='title-block mb-3'>Expected Transfer Duration</label>
+                                <div class="row">
+                                    <div class="col-sm-6 pr-3 pr-sm-2">
+                                        <div class="form-group">
+                                            <div class="input-group date" id="datepicker" data-provide="datepicker">
+                                                <input type="text" class="form-control" value="from">
+                                                <div class="input-group-addon"><i class="fas fa-calendar-alt"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 pl-3 pl-sm-2">
+                                        <div class="form-group">
+                                            <div class="input-group date" id="datepicker" data-provide="datepicker">
+                                                <input type="text" class="form-control" value="to">
+                                                <div class="input-group-addon"><i class="fas fa-calendar-alt"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group mt-2 mb-5">
+                                        <label for="custom-file" class='attach'>Attach National ID</label>
+                                        <input type="file" id='custom-file' class="custom-file">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea name="" rows="4" class="form-control" placeholder="Notes"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <button type="submit" class='text-left send-data'>Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
